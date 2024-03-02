@@ -1,0 +1,31 @@
+{
+  "extends": "plasmo/templates/tsconfig.base",
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    ".plasmo/index.d.ts",
+    "./**/*.ts",
+    "./**/*.tsx"
+  ],
+  "background": {
+    "persistent": true
+  },
+  "permissions": [
+    "tabs",
+    "alarms",
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "scripting",
+    "clipboardRead"
+],
+  "compilerOptions": {
+    "paths": {
+      "~*": [
+        "./*"
+      ]
+    },
+    "baseUrl": "."
+  }
+}
